@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Carnet Gourmand</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">&#x1F958;</div>
+      <div class="site-branding">
+        <p>Le Carnet Gourmand</p>
+        <p>Avis des lecteurs</p>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <section class="recipe">
+          <h1>Pâtes crémeuses au citron</h1>
+
+          <p>
+            Laissez votre avis sur cette recette grâce au formulaire ci-contre.
+          </p>
+
+          <div class="recipe-content">
+            <h2>Ingrédients</h2>
+
+            <ul>
+              <li>Pâtes</li>
+              <li>Crème</li>
+              <li>Citron</li>
+              <li>Parmesan</li>
+            </ul>
+
+            <h2>Préparation</h2>
+
+            <ol>
+              <li>Cuire les pâtes.</li>
+              <li>Mélanger la crème et le citron.</li>
+              <li>Ajouter le parmesan.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="comments">
+          <h2>Laisser un commentaire</h2>
+
+          <form id="comment-form">
+            <label for="name">Votre nom</label>
+            <input type="text" id="name" name="name" placeholder="Ex : Léa" />
+
+            <label for="comment">Votre commentaire</label>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Écrivez votre commentaire..."
+            ></textarea>
+          </form>
+        </section>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
