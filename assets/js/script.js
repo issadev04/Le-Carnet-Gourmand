@@ -25,6 +25,7 @@ commentForm.addEventListener("submit", function (event) {
       "Le nom doit contenir au moins 2 caractères et le commentaire au moins 10 caractères.";
     return;
   }
+
   errorMessage.textContent = "";
 
   const commentElement = document.createElement("article");
@@ -41,11 +42,13 @@ commentForm.addEventListener("submit", function (event) {
   const deleteButton = document.createElement("button");
   deleteButton.type = "button";
   deleteButton.className = "delete-comment";
-  deleteButton.textContent = "Supprimer";
+  deleteButton.textContent = "🗑️ Supprimer";
   commentElement.appendChild(deleteButton);
+
   deleteButton.addEventListener("click", function () {
     commentElement.remove();
   });
+
   commentsList.appendChild(commentElement);
   commentForm.reset();
 });
