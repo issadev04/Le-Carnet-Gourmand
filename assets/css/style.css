@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  background-color: #f6f7fb;
+  color: #111827;
+}
+
+.content {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.recipe,
+.comments {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.recipe-content {
+  background-color: #fafafa;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.comment {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.comments-list {
+  display: grid;
+  gap: 12px;
+}
+
+#comment-form input,
+#comment-form textarea {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+#comment-form {
+  display: grid;
+  gap: 8px;
+}
+
+#comment-form label {
+  font-weight: 700;
+}
+
+#comment-form button {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.delete-comment {
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
