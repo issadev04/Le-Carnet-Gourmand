@@ -8,12 +8,15 @@
   </head>
   <body>
     <header>
-      <div class="logo">&#x1F958;</div>
-      <div class="site-branding">
-        <p>Le Carnet Gourmand</p>
-        <p>Avis des lecteurs</p>
-      </div>
-    </header>
+  <div class="header-content">
+    <div class="logo">🍲</div>
+
+    <div class="site-branding">
+      <p>Le Carnet Gourmand</p>
+      <p>Avis des lecteurs</p>
+    </div>
+  </div>
+</header>
     <main>
       <div class="content">
         <section class="recipe">
@@ -49,12 +52,16 @@
           <form id="comment-form">
             <label for="name">Votre nom</label>
             <input type="text" id="name" name="name" placeholder="Ex : Léa" />
+            <p class="hint">Minimum 2 caractères</p>
 
             <label for="comment">Votre commentaire</label>
             <textarea id="comment" name="comment" placeholder="Écrivez votre commentaire..."></textarea>
+            <p class="hint">Minimum 10 caractères</p>
 
             <button type="submit">Publier</button>
           </form>
+
+          <h2>Commentaires</h2>
 
           <div class="comments-list">
   <article class="comment">
@@ -73,6 +80,10 @@
         </section>
       </div>
     </main>
+    <footer>
+  <p>Devoir JavaScript — Frontend</p>
+</footer>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>

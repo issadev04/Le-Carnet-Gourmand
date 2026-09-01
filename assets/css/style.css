@@ -2,8 +2,18 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
   font-family:
     system-ui,
     -apple-system,
@@ -11,73 +21,233 @@ body {
     Roboto,
     Arial,
     sans-serif;
+
   background-color: #f6f7fb;
   color: #111827;
 }
 
-.content {
-  max-width: 1050px;
+/* Header */
+
+header {
+  background-color: #f6f7fb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-content {
+  max-width: 780px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+}
+
+.site-branding {
+  display: grid;
+  gap: 2px;
+}
+
+.site-branding p {
+  margin: 0;
+}
+
+.site-branding p:first-child {
+  font-weight: 700;
+}
+
+.site-branding p:last-child {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Contenu principal */
+
+main {
+  padding-top: 14px;
+}
+
+.content {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 10px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: 3fr 2fr;
+  gap: 16px;
 }
+
+/* Cartes principales */
 
 .recipe,
 .comments {
   background-color: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 12px;
+  padding: 12px;
 }
+
+/* Zone recette */
 
 .recipe-content {
   background-color: #fafafa;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 14px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
+.recipe h1 {
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.recipe h2,
+.comments h2 {
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.recipe p {
+  font-size: 14px;
+}
+
+.recipe-content li {
+  font-size: 14px;
+}
+
+/* Commentaires */
+
 .comment {
-  padding: 14px;
+  padding: 10px;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  border-radius: 10px;
+}
+
+.comment p {
+  margin: 0 0 10px;
+}
+
+.comment-author {
+  font-weight: 700;
+}
+
+.comment-text {
+  font-size: 14px;
+  margin-bottom: 0;
 }
 
 .comments-list {
   display: grid;
-  gap: 12px;
+  gap: 8px;
 }
 
-#comment-form input,
-#comment-form textarea {
-  padding: 10px 12px;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-}
+/* Formulaire */
 
 #comment-form {
   display: grid;
-  gap: 8px;
+  gap: 10px;
 }
 
 #comment-form label {
   font-weight: 700;
+  font-size: 14px;
+}
+
+.hint {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+#comment-form input,
+#comment-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+#comment-form textarea {
+  min-height: 64px;
 }
 
 #comment-form button {
   background-color: #2563eb;
   color: #ffffff;
   padding: 10px 14px;
+  border: 0;
   border-radius: 12px;
+  font-family: inherit;
+  font-size: 14px;
   font-weight: 700;
 }
 
+/* Message d'erreur */
+
+.error-message {
+  margin: 0;
+  padding: 8px;
+  background-color: #fee2e2;
+  color: #dc2626;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.error-message:empty {
+  display: none;
+}
+
+/* Bouton supprimer */
+
 .delete-comment {
-  background-color: #f3f4f6;
-  color: #374151;
-  padding: 8px 12px;
+  background-color: transparent;
+  color: #dc2626;
+  padding: 6px 10px;
+  border: 0;
   border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 14px;
+  background-color: #f6f7fb;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+footer p {
+  margin: 14px 0 4px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
 }
