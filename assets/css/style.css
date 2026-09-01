@@ -85,7 +85,7 @@ main {
   width: 100%;
   max-width: 1050px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 16px;
 
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -98,8 +98,8 @@ main {
 .comments {
   background-color: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 12px;
+  border-radius: 16px;
+  padding: 16px;
 }
 
 /* Zone recette */
@@ -107,8 +107,8 @@ main {
 .recipe-content {
   background-color: #fafafa;
   border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 12px;
+  padding: 14px;
 }
 
 .recipe h1 {
@@ -135,9 +135,9 @@ main {
 /* Commentaires */
 
 .comment {
-  padding: 10px;
+  padding: 14px;
   border: 1px solid #e5e7eb;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .comment p {
@@ -155,7 +155,7 @@ main {
 
 .comments-list {
   display: grid;
-  gap: 8px;
+  gap: 12px;
 }
 
 /* Formulaire */
