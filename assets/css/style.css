@@ -34,7 +34,7 @@ header {
 }
 
 .header-content {
-  max-width: 780px;
+  max-width: 1050px;
   margin: 0 auto;
   padding: 10px;
 
@@ -83,7 +83,7 @@ main {
 
 .content {
   width: 100%;
-  max-width: 780px;
+  max-width: 1050px;
   margin: 0 auto;
   padding: 0 10px;
 
