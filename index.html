@@ -6,19 +6,24 @@
     <title>Le Carnet Gourmand</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
-    <header>
-  <div class="header-content">
-    <div class="logo">🍲</div>
 
-    <div class="site-branding">
-      <p>Le Carnet Gourmand</p>
-      <p>Avis des lecteurs</p>
-    </div>
-  </div>
-</header>
+  <body>
+    <!-- En-tête -->
+    <header>
+      <div class="header-content">
+        <div class="logo">🍲</div>
+
+        <div class="site-branding">
+          <p>Le Carnet Gourmand</p>
+          <p>Avis des lecteurs</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenu principal -->
     <main>
       <div class="content">
+        <!-- Section recette -->
         <section class="recipe">
           <h1>Pâtes crémeuses au citron</h1>
 
@@ -46,16 +51,22 @@
           </div>
         </section>
 
+        <!-- Section commentaires -->
         <section class="comments">
           <h2>Laisser un commentaire</h2>
 
+          <!-- Formulaire de commentaire -->
           <form id="comment-form">
             <label for="name">Votre nom</label>
             <input type="text" id="name" name="name" placeholder="Ex : Léa" />
             <p class="hint">Minimum 2 caractères</p>
 
             <label for="comment">Votre commentaire</label>
-            <textarea id="comment" name="comment" placeholder="Écrivez votre commentaire..."></textarea>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Écrivez votre commentaire..."
+            ></textarea>
             <p class="hint">Minimum 10 caractères</p>
 
             <button type="submit">Publier</button>
@@ -63,26 +74,28 @@
 
           <h2>Commentaires</h2>
 
+          <!-- Liste des commentaires -->
           <div class="comments-list">
-  <article class="comment">
-    <p class="comment-author">Téo</p>
-    <p class="comment-text">Superbe recette !</p>
-    <button type="button" class="delete-comment">🗑️ Supprimer</button>
-  </article>
+            <article class="comment">
+              <p class="comment-author">Téo</p>
+              <p class="comment-text">Superbe recette !</p>
+              <button type="button" class="delete-comment">🗑️ Supprimer</button>
+            </article>
 
-  <article class="comment">
-    <p class="comment-author">Léa</p>
-    <p class="comment-text">Test de commentaire</p>
-    <button type="button" class="delete-comment">🗑️ Supprimer</button>
-  </article>
-         </div>
-
+            <article class="comment">
+              <p class="comment-author">Léa</p>
+              <p class="comment-text">Test de commentaire</p>
+              <button type="button" class="delete-comment">🗑️ Supprimer</button>
+            </article>
+          </div>
         </section>
       </div>
     </main>
+
+    <!-- Pied de page -->
     <footer>
-  <p>Devoir JavaScript — Frontend</p>
-</footer>
+      <p>Devoir JavaScript — Frontend</p>
+    </footer>
 
     <script src="assets/js/script.js"></script>
   </body>
