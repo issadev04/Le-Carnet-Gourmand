@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Le Carnet Gourmand : découvrez une recette et partagez votre avis."
+    />
     <title>Le Carnet Gourmand</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -58,7 +62,13 @@
           <!-- Formulaire de commentaire -->
           <form id="comment-form">
             <label for="name">Votre nom</label>
-            <input type="text" id="name" name="name" placeholder="Ex : Léa" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ex : Léa"
+              autocomplete="name"
+            />
             <p class="hint">Minimum 2 caractères</p>
 
             <label for="comment">Votre commentaire</label>
@@ -66,6 +76,7 @@
               id="comment"
               name="comment"
               placeholder="Écrivez votre commentaire..."
+              autocomplete="off"
             ></textarea>
             <p class="hint">Minimum 10 caractères</p>
 
